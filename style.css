@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: rgb(161, 183, 206);
+}
+.main-box{
+  width: 400px;
+  height: 98%;
+  margin-top: 1%;
+  background-color: black;
+  color: white;
+  border-radius: 45px;
+  padding: 20px;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px black;
+  outline: 2px solid white;
+}
+
+.icon-box{
+  display: flex;
+  justify-content:space-between;
+  height: 75px;
+  align-items: flex-start;
+}
+.left-corner{
+  display: flex;
+  width: 130px;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-corner .sebeke-icon{
+  width: 2rem;
+}
+.left-corner span{
+  font-size: .75rem;
+  font-style: italic;
+  color: rgb(235, 235, 193);
+}
+
+.left-corner .wifi-icon{
+  width: 1.2rem;
+}
+.clock{
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.batery-icon{
+  width: 170px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.batery-icon span{
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.batery-icon img{
+  width: 2.2rem;
+  margin-right: 0.5rem;
+}
+
+.screen-box{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow:hidden;
+
+}
+
+.screen-1{
+  font-size: 2.5rem;
+  color: #A5A5A5;
+  letter-spacing: 5px;
+  /* visibility: hidden; */
+}
+
+.screen-2{
+  display: block;
+  font-size: 5rem;
+  min-height: 100px;
+}
+
+.calculator-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L"
+    "M N O P"
+    "R R S T";
+    gap: .7rem;
+
+}
+.button{
+  align-items: center;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 40px;
+  height: 5rem;
+  justify-content: center;
+  transition: filter .3s;
+  width: 5rem;
+}
+.button:hover{
+  opacity: 0.7;
+}
+
+.number-0 {
+  border-radius: 55px;
+  justify-content: flex-start;
+  padding-left: 30px;
+  width: 178px;
+}
+
+.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.operator {
+  background: #f1a33c;
+}
+
+.function-AC      {grid-area: A;}
+.negative-positive{grid-area: B;}
+.percentage       {grid-area: C;}
+.divide           {grid-area: D;}
+.number-7         {grid-area: E;}
+.number-8         {grid-area: F;}
+.number-9         {grid-area: G;}
+.multiply         {grid-area: H;}
+.number-4         {grid-area: I;}
+.number-5         {grid-area: J;}
+.number-6         {grid-area: K;}
+.subtract         {grid-area: L;}
+.number-1         {grid-area: M;}
+.number-2         {grid-area: N;}
+.number-3         {grid-area: O;}
+.plus             {grid-area: P;}
+.number-0         {grid-area: R;}
+.number-dot       {grid-area: S;}
+.equal            {grid-area: T;}
+
+.bottom-box{
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  height: 70px;
+}
+
+.bottom{
+  background-color: white;
+  height: 0.25rem;
+  width: 40%;
+
+}

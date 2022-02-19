@@ -109,7 +109,7 @@ divide.addEventListener("click", ()=>{
 
 // click multiplication operator
 multiply.addEventListener("click", ()=>{
-    if(operator !== "" && screen2.innerText == ""){}
+    if(operator != "" && screen2.innerText == ""){}
     else {
         num1 = +screen2.innerText;
         numbers.push(num1)
